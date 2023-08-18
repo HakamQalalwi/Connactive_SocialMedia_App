@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+html,
+body,
+#root,
+.app {
+    height: 100%;
+    width: 100%;
+    font-family: "Rubik", sans-serif;
+}
+
+.linkInImage:hover {
+    filter: grayscale(100%);
+}
+
+.linkInImage:hover img {
+    filter: brightness(1.5) hue-rotate(180deg) sepia(100%) saturate(10000%) drop-shadow(0 0 5px #00aac8);
+}
+
+.editIcon {
+    filter: grayscale(0%);
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+
+.editIcon:hover {
+    filter: brightness(1.2) saturate(1.5) sepia(1) hue-rotate(190deg);
+}
